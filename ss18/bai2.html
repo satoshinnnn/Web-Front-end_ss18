@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let toan=+prompt("diem toan");
+        let van=+prompt("diem van");
+        let anh=+prompt("diem anh");
+        let tb= (toan+van+anh)/3;
+        if(tb>=8.0){
+            document.write("gioi");
+        }else if(6.5<=tb){
+            document.write("kha");
+        }else if(5.0<=tb){
+            document.write("trung binh");
+        }else{
+            document.write("yeu");
+        }
+    </script>
+</body>
+</html>

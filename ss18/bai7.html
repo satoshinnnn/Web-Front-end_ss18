@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=+prompt("nhap so a");
+        let b=+prompt("nhap so b");
+        let answer;
+        let operation=prompt("nhap phep tinh +,-,*,/")
+        if(a==NaN||b==NaN){
+                document.write("a hoac b khong hop le");
+            }else{
+                switch(operation){
+                    case "+":
+                        answer= a+b;
+                        alert(answer);
+                        break;
+                    case "-":
+                        answer=a-b;
+                        alert(answer);
+                        break;
+                    case "*":
+                        answer=a*b;
+                        alert(answer);
+                    case "/":
+                        if(b==0){
+                            alert("khong the lm phep chi cho 0");
+                        }else{
+                            answer=a/b;
+                            alert(answer);
+                        }
+                        break;
+                    default:
+                        alert("phep tinh khong hop le");
+                }            
+            }
+            
+    </script>
+</body>
+</html>
