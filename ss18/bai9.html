@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let hour=+prompt("nhap gio");
+        let minute=+prompt("nhap phut");
+        let second=+prompt("nhap giay");
+        let h,flag;
+        if((0>hour|| hour>23)&&(0>minute || minute>60)&&(0>second || second>60)){
+            alert("thong tin khong hop le");
+        }else{
+            if(hour>=12){
+                h=hour-12;
+                flag="PM";
+                
+            }else{
+                h=hour;
+                flag="AM";
+            }
+            alert(h+ ":"+minute+":"+second+" "+flag);
+        }
+    </script>
+</body>
+</html>
